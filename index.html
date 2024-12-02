@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskHive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="todo-container">
+    <header>
+      <h1 class="todo-header">To-Do List</h1>
+    </header>
+
+    <section class="todo-input">
+      <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Add a new task..." 
+        aria-label="Task Input" 
+      />
+      <button id="addTaskButton" aria-label="Add Task Button">Add</button>
+    </section>
+
+    <section>
+      <ul class="todo-list" id="taskList" aria-live="polite">
+        <!-- Preloaded tasks -->
+        <li class="task">
+          <input 
+            type="checkbox" 
+            id="task1" 
+            class="task-checkbox" 
+          />
+          <label for="task1">Learn to Build</label>
+        </li>
+        <li class="task">
+          <input 
+            type="checkbox" 
+            id="task2" 
+            class="task-checkbox"
+          />
+          <label for="task2">Build On Base</label>
+        </li>
+        <li class="task">
+          <input 
+            type="checkbox" 
+            id="task3" 
+            class="task-checkbox" 
+          />
+          <label for="task3">Create A Smart Contract</label>
+        </li>
+        <li class="task">
+          <input 
+            type="checkbox" 
+            id="task4" 
+            class="task-checkbox" 
+          />
+          <label for="task4">Create Onchain Apps</label>
+        </li>
+      </ul>
+    </section>
+    <footer>
+     Created by <strong>thekera404</strong>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+            </html>
